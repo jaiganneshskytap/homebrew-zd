@@ -5,20 +5,20 @@
 class Zd < Formula
   desc "Zendesk CLI — manage tickets, users, and more from the terminal"
   homepage "https://github.com/jaiganneshskytap/Zendesk-CLI"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.2/zd_0.0.2_darwin_amd64.tar.gz"
-      sha256 "cb6007d21277f7bd36c62785bed68ca3b3e4782cfdd11a79836674b7d2ba7528"
+      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.3/zd_0.0.3_darwin_amd64.tar.gz"
+      sha256 "be4033822e13dfd8f248ef6e567a750e7da57e4e24b1e236895bf020c236bb80"
 
       define_method(:install) do
         bin.install "zd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.2/zd_0.0.2_darwin_arm64.tar.gz"
-      sha256 "ebd8131ae8c5011579072bb40cb7c5e8cd2f46e3595397d78f337eb3270be3c4"
+      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.3/zd_0.0.3_darwin_arm64.tar.gz"
+      sha256 "65bbf88c8ef1e80f41f2d1c21b310e4f9b4fd6c1a5da51a959ca2ec6092e23a9"
 
       define_method(:install) do
         bin.install "zd"
@@ -28,15 +28,15 @@ class Zd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.2/zd_0.0.2_linux_amd64.tar.gz"
-      sha256 "bff28d3e1b8cd120aaaa5f04787aaf89db4e33085d1e6eb3a36b8213e788c8ab"
+      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.3/zd_0.0.3_linux_amd64.tar.gz"
+      sha256 "e2c6a4b21493771afbeb7bf632da9680fddcf9843dbcd9c9a0a28bfe09583eb3"
       define_method(:install) do
         bin.install "zd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.2/zd_0.0.2_linux_arm64.tar.gz"
-      sha256 "f3b9cf39b0e005e9a676767eaa52c0c3a85bffc8a2a8d2f61bd9efd4cfbe4849"
+      url "https://github.com/jaiganneshskytap/Zendesk-CLI/releases/download/v0.0.3/zd_0.0.3_linux_arm64.tar.gz"
+      sha256 "2e70e890fd11adde622ff8a9b51f496edac15efc6c5b6690d53c1b8ceb26583b"
       define_method(:install) do
         bin.install "zd"
       end
